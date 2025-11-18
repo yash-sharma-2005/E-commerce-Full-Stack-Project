@@ -14,22 +14,29 @@ const Navbar = () => {
 
         <NavLink to='/' className='flex flex-col items-center gap-1'>
            <p>HOME</p> 
-           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700' />
+           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
         </NavLink>
         <NavLink to='/collection' className='flex flex-col items-center gap-1'>
            <p>COLLECTION</p> 
-           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700' />
+           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
         </NavLink>
         <NavLink to='/About' className='flex flex-col items-center gap-1'>
            <p>ABOUT</p> 
-           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700' />
+           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
         </NavLink>
         <NavLink to='/contact' className='flex flex-col items-center gap-1'>
            <p>CONTACT</p> 
-           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700' />
+           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
         </NavLink>
 
        </ul>
+       <div className='flex items-center gap-6'>
+         <img src={assets.search_icon} className='w-6 cursor-pointer' alt="" />
+
+         <div className='group relative'>
+            <img className='w-5 cursor-pointer' src={assets.profile_icon} alt="" />
+         </div>
+       </div>
         </div>
     )
 }
